@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Калькулятор</title>
+</head>
+<body>
+<h1>Практическая работа №1</h1>
+<h3>Калькулятор</h3>
+<h5>Метод Get</h5>
+<p>"Вставьте любые значения и выберите действие, которые хотите совершить"</p>
+<form method="get" action="/">
+    <a style="margin: 5px;">Выберите метод:</a> <input style="margin: 5px;" type="submit" value="Post"/>
+</form>
+<form method="get" action="/Mainn">
+    <input style="margin: 5px;" type="Pervoe" name="Pervoe" id="Pervoe"/><br>
+    <select style="margin: 5px;" name="Znak" id="Znak">
+        <option>+</option>
+        <option>-</option>
+        <option>*</option>
+        <option>/</option>
+    </select><br>
+    <input style="margin: 5px;" type="Vtoroe" name="Vtoroe" id="Vtoroe"/><br>
+    <input style="margin: 5px;" type="submit" value="Итог"/>
+</form>
+<p th:text="'Итог: '+ ${itogi} " />
+</body>
+</html>
